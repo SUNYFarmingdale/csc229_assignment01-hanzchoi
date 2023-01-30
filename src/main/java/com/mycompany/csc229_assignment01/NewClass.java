@@ -3,7 +3,7 @@ package com.mycompany.csc229_assignment01;
 
 /**
  *
- * @author MoaathAlrajab
+ * @author Hanbi Hanz Choi
  */
 public class NewClass {
     
