@@ -2,13 +2,6 @@
 * ToDo 01:
  Complete the followings:
 
-The Course class should have:
-
-    - ID 
-
-    - Name
-
-    - Code
 
  - You need to have setters and getters for all data members
  - You must have a default constructor and an overloaded one that accepts 3 parameters to update the member variables.
@@ -30,8 +23,32 @@ package com.mycompany.csc229_assignment01;
 
 /**
  *
- * @author MoaathAlrajab
+ * @author Hanbi Hanz Choi
  */
 public class Course {
+    
+    /**
+     * The Course class should have:
+    - ID, Name, Code
+     */
+    int ID;
+    String name;
+    int code;
+    
+    int getID(){
+        return ID;
+    }
+    
+    String getName(){
+        return name;
+    }
+    
+    int getCode(){
+        return code;
+    }
+    
+    
+    
+    
 
 }
