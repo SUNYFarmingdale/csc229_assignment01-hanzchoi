@@ -3,9 +3,6 @@
  Complete the followings:
 
 
-
- - Using a driver class (with main), instantiate the Course class and call its methods to change the id, name, and code.
-
  - Test and run your code.
 
  - Add comments to explain your program.
@@ -31,17 +28,26 @@ public class Course {
      */
     private int ID;
     private String name;
-    private int code;
+    private String code;
     
     /**
      *  You must have a default constructor and an overloaded one that 
      *  accepts 3 parameters to update the member variables.
      */
     
+    public Course(){
+        
+    }
     
+    public Course(int ID, String name, String code){
+        this.ID = ID;
+        this.name = name;
+        this.code = code;
+    }
     
     /**
      * You need to have setters and getters for all data members
+     * @return 
      */
     
     public int getID(){
@@ -60,14 +66,26 @@ public class Course {
         this.name = name;
     }
     
-    public int getCode(){
+    public String getCode(){
         return this.code;
     }
     
-    public void setCode(int code){
+    public void setCode(String code){
         this.code = code;
     }
     
+    
+    /**
+     * Using a driver class (with main), instantiate the Course class and call 
+     * its methods to change the id, name, and code.
+     * @param args 
+     */
+    public static void main(String[] args) {
+        Course course = new Course();
+        course.setID(9);
+        course.setCode("CSC229");
+        course.setName("Testing");
+    }
 }
     
     
